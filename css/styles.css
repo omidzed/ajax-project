@@ -17,10 +17,16 @@ header {
   background-color: #fff;  /* White background */
   display: flex;             /* Arrange child elements in a row */
   align-items: flex-start;        /* Vertically center content */
-  padding: 2em;
-  border: 1px solid #e0e0e0;
+  border: 0 solid #e0e0e0;
   box-shadow: 5px 0 20px;
   margin: 2rem 0;
+}
+
+.logo-container {
+  width: 69px;
+  height: 69px;
+  background-color: rgb(165, 162, 163);
+  margin: 0;
 }
 
 body {
