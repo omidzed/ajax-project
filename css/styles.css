@@ -1,36 +1,65 @@
-.logo {
-  width: 200px;
-  height: 200px;
-  margin: auto;
-}
-
-header {
-  background-color: rgb(35, 31, 32);
-}
-
 .header-row {
   display: flex;
 }
 
 .home-page-listing {
   box-sizing: border-box;
-  background-color: #fff;  /* White background */
-  display: flex;             /* Arrange child elements in a row */
-  align-items: flex-start;        /* Vertically center content */
-  border: 0 solid #e0e0e0;
-  box-shadow: 5px 0 20px;
-  margin: 2rem 0;
+  background-color: #fff; /* White background */
+  display: flex; /* Arrange child elements in a row */
+  border: 0.1px solid rgb(165, 162, 163);
+  box-shadow: -1px 3px 7px rgba(0, 0, 0, 0.52);
+  margin: 0.5rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.logo-container {
-  width: 69px;
-  height: 69px;
+.info {
+  padding: 0.5rem;
+}
+
+#logo-container {
+  width: 50px;
+  height: 50px;
   background-color: rgb(165, 162, 163);
   margin: 0;
+  border-color: rgb(18, 18, 18);
 }
 
-body {
-  height: 100vh;
+#name {
+  width: calc(100% / 5);
+  margin-left: 0.5rem;
+  font-size: large;
+}
+
+#percent-change {
+  font-size: small;
+  width: calc(100% / 5);
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+#heart {
+  margin-left: 0.5rem;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+}
+
+.search-box {
+  font-size: large;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 0.1px solid rgba(141, 141, 141, 0.878);
+  margin: 0.75rem 1rem;
+  width: 350px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.app-logo {
+  width: 100px;
+  height: 100px;
   margin: auto;
-  padding: 2rem;
 }

@@ -18,6 +18,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "markuplint": "^2.10.1",
+    "prettier": "3.0.3",
     "stylelint": "^14.10.0",
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-config-standard": "^27.0.0"
