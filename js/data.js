@@ -3,7 +3,6 @@
 let data = {
   view: 'home-page',
   assets: [],
-  editing: null,
   nextAssetId: 1
 };
 

@@ -1,0 +1,30 @@
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(35, 31, 32);
+}
+
+.header-row {
+  display: flex;
+}
+
+.home-page-listing {
+  box-sizing: border-box;
+  background-color: #fff;  /* White background */
+  display: flex;             /* Arrange child elements in a row */
+  align-items: flex-start;        /* Vertically center content */
+  padding: 2em;
+  border: 1px solid #e0e0e0;
+  box-shadow: 5px 0 20px;
+  margin: 2rem 0;
+}
+
+body {
+  height: 100vh;
+  margin: auto;
+  padding: 2rem;
+}
