@@ -23,6 +23,8 @@
   background-color: rgb(165, 162, 163);
   margin: 0;
   border-color: rgb(18, 18, 18);
+  background-image: url("https://s2.coinmarketcap.com/static/img/coins/64x64/1.png");
+  background-size: 100%;
 }
 
 #name {
@@ -31,11 +33,16 @@
   font-size: large;
 }
 
+#price {
+  font-size: 0.9rem;
+}
+
 #percent-change {
-  font-size: small;
+  font-size: 0.7rem;
   width: calc(100% / 5);
   margin-left: 0.5rem;
   margin-right: 0;
+  color: rgb(71, 214, 27);
 }
 
 #heart {
@@ -48,7 +55,8 @@
 }
 
 .search-box {
-  font-size: large;
+  font-size: 1.2rem;
+  font-weight: 600;
   box-sizing: border-box;
   border-radius: 5px;
   border: 0.1px solid rgba(141, 141, 141, 0.878);

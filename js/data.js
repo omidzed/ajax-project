@@ -1,16 +1,25 @@
 /* exported data */
 
-let data = {
-  view: 'home-page',
-  assets: [],
-  nextAssetId: 1
-};
+// this will serve as the database for the home page assets
+let homePageAssets = [];
 
 const previousEntriesJSON = localStorage.getItem('javascript-local-storage');
 if (previousEntriesJSON !== null) {
-  data = JSON.parse(previousEntriesJSON);
+  homePageAssets = JSON.parse(previousEntriesJSON);
 }
 window.addEventListener('beforeunload', function (event) {
-  const entriesJSON = JSON.stringify(data);
+  const entriesJSON = JSON.stringify(homePageAssets);
+  localStorage.setItem('javascript-local-storage', entriesJSON);
+});
+
+// this will serve as the database for the watch list assets
+let watchListAssets = [];
+
+const previousEntriesJSON2 = localStorage.getItem('javascript-local-storage');
+if (previousEntriesJSON2 !== null) {
+  watchListAssets = JSON.parse(previousEntriesJSON2);
+}
+window.addEventListener('beforeunload', function (event) {
+  const entriesJSON = JSON.stringify(watchListAssets);
   localStorage.setItem('javascript-local-storage', entriesJSON);
 });

@@ -20,6 +20,8 @@
     "case-sensitive-attr-name": true,
     "case-sensitive-tag-name": true,
     "indentation": 2
+  },"parserOptions": {
+    "sourceType": "module"
   },
   "nodeRules": [
     {
@@ -55,6 +57,12 @@
       "rules": {
         "indentation": false
       }
+
     }
   ]
+}
+
+{
+
+  // ... other ESLint configuration settings ...
 }

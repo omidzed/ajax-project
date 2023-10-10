@@ -25,20 +25,23 @@ header {
 
 .listings-container {
   height: 100vh;
-  margin: 1rem 2rem;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  padding: 1.5rem 2rem;
 }
 
 .search-heart-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 
 body {
   margin-bottom: 1rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
