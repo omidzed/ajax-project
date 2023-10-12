@@ -1,5 +1,9 @@
 /* eslint-disable no-console */
-import { homePagedata } from './data.js';
+// eslint-disable-next-line no-unused-vars, import/no-duplicates
+import { homePageAssets } from './data.js';
+// eslint-disable-next-line no-unused-vars, import/no-duplicates
+import { watchListAssets } from './data.js';
+
 const targetUrl = encodeURIComponent(
   'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
 );
@@ -16,9 +20,8 @@ xhr.addEventListener('load', function () {
   console.log(xhr.response);
   console.log(xhr.status);
 
-  for (let i = 0; i <= data[assets].length; i++){
+  // for (let i = 0; i <= data[assets].length; i++){
 
-  }
   // console.log(xhr.response.data[0].name);
   // console.log(
   //   xhr.response.data[0].circulating_supply + ' ' + xhr.response.data[0].symbol
@@ -55,15 +58,17 @@ xhr2.addEventListener('load', function () {
 });
 xhr2.send();
 
-
+// eslint-disable-next-line no-unused-vars
 function initializeApp(event) {
-  const asset = {
-    name: data.homePagedata.assets.name,
-    title: $titleInput.value,
-    photoUrl: $photoUrlInput.value,
-    notes: $notesText.value,
-  };
+  // const asset = {
+  //   name: data.homePagedata.assets.name,
+  //   title: $titleInput.value,
+  //   photoUrl: $photoUrlInput.value,
+  //   notes: $notesText.value
+  // }
+}
 
+// eslint-disable-next-line no-unused-vars
 function renderAsset(asset) {
   const $asset = document.createElement('div');
   $asset.setAttribute('class', 'home-page-listing');
@@ -71,10 +76,9 @@ function renderAsset(asset) {
   const $logoContainer = document.createElement('div');
   $logoContainer.setAttribute('id', 'logo-container');
 
-
   const $name = document.createElement('div');
   $name.setAttribute('id', 'name');
-  $name.innerText = xhr.response.data[i].name;
+  $name.innerText = xhr.response.data[0].name;
 
   const $price = document.createElement('div');
   $price.setAttribute('id', 'price');

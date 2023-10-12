@@ -23,3 +23,6 @@ window.addEventListener('beforeunload', function (event) {
   const entriesJSON = JSON.stringify(watchListAssets);
   localStorage.setItem('javascript-local-storage', entriesJSON);
 });
+
+export { homePageAssets };
+export { watchListAssets };
